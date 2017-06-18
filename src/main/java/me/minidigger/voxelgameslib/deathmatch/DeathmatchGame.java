@@ -23,7 +23,7 @@ public class DeathmatchGame extends AbstractGame {
     private WorldHandler worldHandler;
 
     public DeathmatchGame() {
-        super(DeathmatchModule.GAMEMODE);
+        super(DeathmatchPlugin.GAMEMODE);
     }
 
     @Override
