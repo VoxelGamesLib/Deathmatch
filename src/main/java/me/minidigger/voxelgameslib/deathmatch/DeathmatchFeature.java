@@ -1,5 +1,6 @@
 package me.minidigger.voxelgameslib.deathmatch;
 
+import me.minidigger.voxelgameslib.event.GameEvent;
 import me.minidigger.voxelgameslib.feature.AbstractFeature;
 import me.minidigger.voxelgameslib.feature.features.DuelFeature;
 import me.minidigger.voxelgameslib.feature.features.TeamFeature;
@@ -36,11 +37,9 @@ public class DeathmatchFeature extends AbstractFeature {
 
     }
 
-    @EventHandler
+    @GameEvent
     public void onDeath(PlayerDeathEvent e) {
-        if (getPhase().getGame().isPlaying(e.getEntity().getUniqueId())) {
 
-        }
     }
 
     @Override
