@@ -2,6 +2,7 @@ package me.minidigger.voxelgameslib.deathmatch;
 
 import javax.annotation.Nonnull;
 
+import me.minidigger.voxelgameslib.feature.features.TeamSelectFeature;
 import me.minidigger.voxelgameslib.game.AbstractGame;
 import me.minidigger.voxelgameslib.game.GameDefinition;
 import me.minidigger.voxelgameslib.game.GameInfo;
@@ -26,6 +27,8 @@ public class DeathmatchGame extends AbstractGame {
         LobbyWithVotePhase votePhase = createPhase(LobbyWithVotePhase.class);
         GracePhase gracePhase = createPhase(GracePhase.class);
         DeathmatchPhase survivalGamesPhase = createPhase(DeathmatchPhase.class);
+
+        votePhase.addFeature(createFeature(TeamSelectFeature.class, votePhase));
 
         votePhase.setNextPhase(gracePhase);
         gracePhase.setNextPhase(survivalGamesPhase);
