@@ -1,7 +1,6 @@
 package me.minidigger.voxelgameslib.deathmatch;
 
 import me.minidigger.voxelgameslib.GameConstants;
-import me.minidigger.voxelgameslib.feature.features.DuelFeature;
 import me.minidigger.voxelgameslib.feature.features.GameModeFeature;
 import me.minidigger.voxelgameslib.feature.features.MapFeature;
 import me.minidigger.voxelgameslib.feature.features.SpawnFeature;
@@ -26,7 +25,7 @@ public class DeathmatchPhase extends TimedPhase {
         MapFeature mapFeature = getGame().createFeature(MapFeature.class, this);
         mapFeature.setShouldUnload(true);
         addFeature(mapFeature);
-
+  
         SpawnFeature spawnFeature = getGame().createFeature(SpawnFeature.class, this);
         spawnFeature.setRespawn(false);
         addFeature(spawnFeature);
