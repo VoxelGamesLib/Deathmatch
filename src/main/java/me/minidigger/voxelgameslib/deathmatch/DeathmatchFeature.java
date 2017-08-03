@@ -1,8 +1,8 @@
 package me.minidigger.voxelgameslib.deathmatch;
 
-import me.minidigger.voxelgameslib.event.GameEvent;
-import me.minidigger.voxelgameslib.feature.AbstractFeature;
-import me.minidigger.voxelgameslib.feature.features.TeamFeature;
+import com.voxelgameslib.voxelgameslib.event.GameEvent;
+import com.voxelgameslib.voxelgameslib.feature.AbstractFeature;
+import com.voxelgameslib.voxelgameslib.feature.features.TeamFeature;
 
 import org.bukkit.event.entity.PlayerDeathEvent;
 
