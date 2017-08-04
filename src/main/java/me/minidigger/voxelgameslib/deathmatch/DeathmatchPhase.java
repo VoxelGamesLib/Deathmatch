@@ -25,7 +25,7 @@ public class DeathmatchPhase extends TimedPhase {
         MapFeature mapFeature = getGame().createFeature(MapFeature.class, this);
         mapFeature.setShouldUnload(true);
         addFeature(mapFeature);
-  
+
         SpawnFeature spawnFeature = getGame().createFeature(SpawnFeature.class, this);
         spawnFeature.setRespawn(false);
         addFeature(spawnFeature);
