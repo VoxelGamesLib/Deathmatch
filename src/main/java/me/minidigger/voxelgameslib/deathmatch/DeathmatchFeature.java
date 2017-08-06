@@ -4,6 +4,8 @@ import com.voxelgameslib.voxelgameslib.event.GameEvent;
 import com.voxelgameslib.voxelgameslib.feature.AbstractFeature;
 import com.voxelgameslib.voxelgameslib.feature.features.TeamFeature;
 
+import javax.annotation.Nonnull;
+
 import org.bukkit.event.entity.PlayerDeathEvent;
 
 import lombok.extern.java.Log;
@@ -35,11 +37,12 @@ public class DeathmatchFeature extends AbstractFeature {
     }
 
     @GameEvent
-    public void onDeath(PlayerDeathEvent e) {
+    public void onDeath(@Nonnull PlayerDeathEvent e) {
 
     }
 
     @Override
+    @Nonnull
     public Class[] getDependencies() {
         return new Class[]{TeamFeature.class};
     }
