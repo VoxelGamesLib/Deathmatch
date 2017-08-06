@@ -21,21 +21,6 @@ public class DeathmatchFeature extends AbstractFeature {
                 teamFeature.getTeam(user).ifPresent(team -> log.finer(user.getRawDisplayName() + " is on team " + team.getName())));
     }
 
-    @Override
-    public void stop() {
-
-    }
-
-    @Override
-    public void tick() {
-
-    }
-
-    @Override
-    public void init() {
-
-    }
-
     @GameEvent
     public void onDeath(@Nonnull PlayerDeathEvent e) {
 
