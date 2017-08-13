@@ -1,10 +1,10 @@
 package me.minidigger.voxelgameslib.deathmatch;
 
+import javax.annotation.Nonnull;
+
 import com.voxelgameslib.voxelgameslib.event.GameEvent;
 import com.voxelgameslib.voxelgameslib.feature.AbstractFeature;
 import com.voxelgameslib.voxelgameslib.feature.features.TeamFeature;
-
-import javax.annotation.Nonnull;
 
 import org.bukkit.event.entity.PlayerDeathEvent;
 
