@@ -68,3 +68,33 @@ configurations.all {
     // Check for updates every build
     resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
 }
+
+task createPom() {
+    pom {
+        project {
+            groupId 'com.voxelgameslib'
+            artifactId 'Deathmatch'
+            version version
+
+            inceptionYear '2015'
+            licenses {
+                license {
+                    name 'MIT'
+                    url 'https://github.com/VoxelGamesLib/Deathmatch/blob/master/LICENSE'
+                    distribution 'repo'
+                }
+            }
+
+            issueManagement {
+                system 'GitHub Issues'
+                url 'https://github.com/VoxelGamesLib/VoxelGamesLibv2/issues'
+            }
+
+            scm {
+                connection 'scm:git@github.com:VoxelGamesLib/Deathmatch.git'
+                developerConnection 'scm:git@github.com:VoxelGamesLib/Deathmatch.git'
+                url 'https://github.com/VoxelGamesLib/Deathmatch'
+            }
+        }
+    }.writeTo("pom.xml")
+}
