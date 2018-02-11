@@ -12,7 +12,7 @@ git config --global user.name "VoxelGamesLibBot"
 # copy over stuff we want to deploy
 echo "copy stuff to deploy"
 cp -R build/dependencyUpdates/. deploy-stuff/Deathmatch
-cp -R build/docs/javadoc/. deploy-stuff/Deathmatch
+cp -R build/docs/javadoc/. deploy-stuff/Deathmatch/javadoc
 cp -R build/reports/. deploy-stuff/Deathmatch
 cp -R build/libs/. deploy-stuff/Deathmatch
 
