@@ -1,9 +1,12 @@
 package me.minidigger.voxelgameslib.deathmatch;
 
+import java.util.Collections;
+import java.util.List;
 import javax.annotation.Nonnull;
 
 import com.voxelgameslib.voxelgameslib.event.GameEvent;
 import com.voxelgameslib.voxelgameslib.feature.AbstractFeature;
+import com.voxelgameslib.voxelgameslib.feature.Feature;
 import com.voxelgameslib.voxelgameslib.feature.features.TeamFeature;
 
 import org.bukkit.event.entity.PlayerDeathEvent;
@@ -28,7 +31,7 @@ public class DeathmatchFeature extends AbstractFeature {
 
     @Override
     @Nonnull
-    public Class[] getDependencies() {
-        return new Class[]{TeamFeature.class};
+    public List<Class<? extends Feature>> getDependencies() {
+        return Collections.singletonList(TeamFeature.class);
     }
 }
