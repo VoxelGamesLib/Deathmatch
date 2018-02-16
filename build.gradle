@@ -5,11 +5,6 @@ dependencies {
     compileOnly rootProject
 }
 
-task copyToServer(dependsOn: 'jar', type: Copy) {
-    from 'build/libs/deathmatch-' + project.version + '.jar'
-    into '../testserver/plugins/'
-}
-
 task createPom() {
     pom {
         project {
