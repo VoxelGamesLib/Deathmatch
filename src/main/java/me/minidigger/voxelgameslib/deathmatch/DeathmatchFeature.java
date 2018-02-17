@@ -17,7 +17,7 @@ import lombok.extern.java.Log;
 public class DeathmatchFeature extends AbstractFeature {
 
     @Override
-    public void start() {
+    public void enable() {
         TeamFeature teamFeature = getPhase().getFeature(TeamFeature.class);
 
         getPhase().getGame().getPlayers().forEach(user ->
