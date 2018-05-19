@@ -4,6 +4,7 @@ import com.voxelgameslib.voxelgameslib.GameConstants;
 import com.voxelgameslib.voxelgameslib.feature.features.GameModeFeature;
 import com.voxelgameslib.voxelgameslib.feature.features.MapFeature;
 import com.voxelgameslib.voxelgameslib.feature.features.SpawnFeature;
+import com.voxelgameslib.voxelgameslib.feature.features.SpectatorFeature;
 import com.voxelgameslib.voxelgameslib.feature.features.TeamFeature;
 import com.voxelgameslib.voxelgameslib.phase.TimedPhase;
 
@@ -39,5 +40,8 @@ public class DeathmatchPhase extends TimedPhase {
 
         TeamFeature teamFeature = getGame().createFeature(TeamFeature.class, this);
         addFeature(teamFeature);
+
+        SpectatorFeature spectatorFeature = getGame().createFeature(SpectatorFeature.class, this);
+        addFeature(spectatorFeature);
     }
 }
