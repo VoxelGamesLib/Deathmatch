@@ -2,6 +2,7 @@ package me.minidigger.voxelgameslib.deathmatch;
 
 import java.util.Collections;
 import java.util.List;
+import java.util.logging.Logger;
 import javax.annotation.Nonnull;
 
 import com.voxelgameslib.voxelgameslib.event.GameEvent;
@@ -11,10 +12,9 @@ import com.voxelgameslib.voxelgameslib.feature.features.TeamFeature;
 
 import org.bukkit.event.entity.PlayerDeathEvent;
 
-import lombok.extern.java.Log;
-
-@Log
 public class DeathmatchFeature extends AbstractFeature {
+
+    private static final Logger log = Logger.getLogger(DeathmatchFeature.class.getName());
 
     @Override
     public void enable() {
