@@ -1,5 +1,5 @@
 name: Deathmatch
-version: @version@
+version: ${version.number}
 main: me.minidigger.voxelgameslib.deathmatch.DeathmatchPlugin
 authors: [MiniDigger]
 depend: [VoxelGamesLib]
