@@ -3,3 +3,4 @@ version: ${version.number}
 main: me.minidigger.voxelgameslib.deathmatch.DeathmatchPlugin
 authors: [MiniDigger]
 depend: [VoxelGamesLib]
+api-version: 1.13
