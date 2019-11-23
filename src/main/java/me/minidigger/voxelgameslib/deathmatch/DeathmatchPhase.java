@@ -1,12 +1,12 @@
 package me.minidigger.voxelgameslib.deathmatch;
 
 import com.voxelgameslib.voxelgameslib.GameConstants;
-import com.voxelgameslib.voxelgameslib.feature.features.GameModeFeature;
-import com.voxelgameslib.voxelgameslib.feature.features.MapFeature;
-import com.voxelgameslib.voxelgameslib.feature.features.SpawnFeature;
-import com.voxelgameslib.voxelgameslib.feature.features.SpectatorFeature;
-import com.voxelgameslib.voxelgameslib.feature.features.TeamFeature;
-import com.voxelgameslib.voxelgameslib.phase.TimedPhase;
+import com.voxelgameslib.voxelgameslib.api.feature.features.GameModeFeature;
+import com.voxelgameslib.voxelgameslib.api.feature.features.MapFeature;
+import com.voxelgameslib.voxelgameslib.api.feature.features.SpawnFeature;
+import com.voxelgameslib.voxelgameslib.api.feature.features.SpectatorFeature;
+import com.voxelgameslib.voxelgameslib.api.feature.features.TeamFeature;
+import com.voxelgameslib.voxelgameslib.api.phase.TimedPhase;
 
 import org.bukkit.GameMode;
 

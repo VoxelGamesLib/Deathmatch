@@ -2,12 +2,12 @@ package me.minidigger.voxelgameslib.deathmatch;
 
 import javax.annotation.Nonnull;
 
-import com.voxelgameslib.voxelgameslib.feature.features.TeamSelectFeature;
-import com.voxelgameslib.voxelgameslib.game.AbstractGame;
-import com.voxelgameslib.voxelgameslib.game.GameDefinition;
-import com.voxelgameslib.voxelgameslib.game.GameInfo;
-import com.voxelgameslib.voxelgameslib.phase.phases.GracePhase;
-import com.voxelgameslib.voxelgameslib.phase.phases.LobbyWithVotePhase;
+import com.voxelgameslib.voxelgameslib.api.feature.features.TeamSelectFeature;
+import com.voxelgameslib.voxelgameslib.api.game.AbstractGame;
+import com.voxelgameslib.voxelgameslib.api.game.GameDefinition;
+import com.voxelgameslib.voxelgameslib.api.game.GameInfo;
+import com.voxelgameslib.voxelgameslib.api.phase.phases.GracePhase;
+import com.voxelgameslib.voxelgameslib.api.phase.phases.LobbyWithVotePhase;
 
 /**
  * Created by Martin on 28.01.2017.

@@ -5,10 +5,10 @@ import java.util.List;
 import java.util.logging.Logger;
 import javax.annotation.Nonnull;
 
-import com.voxelgameslib.voxelgameslib.event.GameEvent;
-import com.voxelgameslib.voxelgameslib.feature.AbstractFeature;
-import com.voxelgameslib.voxelgameslib.feature.Feature;
-import com.voxelgameslib.voxelgameslib.feature.features.TeamFeature;
+import com.voxelgameslib.voxelgameslib.api.event.GameEvent;
+import com.voxelgameslib.voxelgameslib.api.feature.AbstractFeature;
+import com.voxelgameslib.voxelgameslib.api.feature.Feature;
+import com.voxelgameslib.voxelgameslib.api.feature.features.TeamFeature;
 
 import org.bukkit.event.entity.PlayerDeathEvent;
 
